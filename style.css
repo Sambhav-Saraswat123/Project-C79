@@ -1,0 +1,21 @@
+body{
+    background-image: url("./Bg.jpg");
+}
+a{
+    cursor: pointer;
+}
+.img_div{
+	float: left;
+	width: 50%;
+	padding: 5px;
+}
+#displayMenu {
+    font-family: cursive;
+    color: aliceblue;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+#add{
+    margin: 3px;
+}

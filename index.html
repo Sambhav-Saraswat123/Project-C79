@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADV-C79</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head> 
+<body>
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <span class="ml-3 text-xl">Pizzeria</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a class="mr-5 hover:text-white" href="#main">View menu</a>
+            <a class="mr-5 hover:text-white" href="#add">Add new menu</a>
+          </nav>
+        </div>
+      </header>
+      <section class="text-gray-400 body-font" id="main">
+        <div class="img_div">
+            <img src="./pizza.png" alt="">
+        </div>
+        <button class="flex mx-auto mt-16 text-white bg-yellow-500 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg" onclick="getMenu()">Show menu</button>
+        <ol id="displayMenu">
+
+        </ol>
+        <a href="#add">
+        <button class="flex mx-auto mt-16 text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Recommend a new pizza</button>
+        </a>
+      </section>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <section class="text-gray-400 body-font" id="add">
+        <input type="text" id="n" placeholder="Pizza name here">
+        <button class="flex mx-auto mt-16 text-black bg-white border-0 py-2 px-8 focus:outline-none hover:bg-gray-200" id="add" onclick="add()">Add</button>
+      </section>
+      <div id="view">
+
+      </div>
+</body>
+</html>
